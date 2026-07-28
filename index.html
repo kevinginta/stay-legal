@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stay — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #FFFFFF; --surface: #F6F3FB; --ink: #1E1B24;
+      --ink-soft: #5C5566; --accent: #6D28D9; --rule: #D9D0EC;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #131117; --surface: #211D29; --ink: #F4F2F8;
+        --ink-soft: #C2BBD0; --accent: #AEA0F0; --rule: #3B3448;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 2.5rem 1.25rem 5rem;
+      background: var(--bg); color: var(--ink);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main { max-width: 46rem; margin: 0 auto; }
+    .brand { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.5px; margin: 0; }
+    .effective { color: var(--ink-soft); font-size: 0.9rem; margin: 0.35rem 0 2.5rem; }
+    h2 { font-size: 1.15rem; margin: 2.25rem 0 0.6rem; }
+    p, li { color: var(--ink); }
+    ul { padding-left: 1.15rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--accent); }
+    nav { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font-size: 0.9rem; }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="brand">Stay</h1>
+    <p class="effective">Privacy Policy &middot; Effective July 28, 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Stay is built and operated by an independent developer (&quot;we,&quot; &quot;us,&quot; or &quot;Stay&quot;). This policy applies to the Stay mobile app. By creating an account, you agree to the collection and use of information as described here.</p>
+    </section>
+
+    <section>
+      <h2>Information we collect</h2>
+      <p>Account information: your email address and a password (stored securely, hashed, by our authentication provider — we never see or store your password in plain text). If you sign in with Google instead, we receive your email address and basic profile information from Google.</p>
+      <p>Profile information: your chosen username and, if you add one, a profile photo.</p>
+      <p>Content you create: stays you log (hotel, dates, note, photos), ratings and rankings from head-to-head comparisons, your wishlist, interests you pick during onboarding, who you follow and who follows you, and any reports or blocks you make against other users.</p>
+      <p>Device information: if you enable notifications, we store a push token issued by Apple/Google so we can deliver alerts (currently: new-follower alerts). This identifies your device installation, not you personally, and is deleted when you sign out or delete your account.</p>
+      <p>Diagnostics: if the app crashes or hits an error, we receive a crash report through Sentry containing the error, the app version, and basic device model and OS information. These reports are not configured to include your name, email, or IP address.</p>
+      <p>What we don't collect: Stay does not access your device's precise location, contacts, camera, or microphone. The app only ever opens your photo library, and only when you choose to add a picture.</p>
+    </section>
+
+    <section>
+      <h2>How we use it</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Operate core features: your feed, hotel pages, rankings, calendar, and search.</li>
+        <li>Personalize the Explore page's suggestions, based on your interests and past stays.</li>
+        <li>Send push notifications you've opted into.</li>
+        <li>Diagnose crashes and fix bugs.</li>
+        <li>Review reports of abuse and enforce blocks between users.</li>
+        <li>Respond if you contact us for support.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How we share it</h2>
+      <p>With other users: Stay is social by design. Your username, profile photo, the stays you log, your ratings, and your follower/following lists are visible to other signed-in users — unless you block them, in which case your content is hidden from each other in both directions.</p>
+      <p>With service providers: Supabase hosts our database, authentication, file storage, and backend functions. Expo (EAS) delivers app updates and routes push notifications. Sentry processes crash reports. The Google Places API supplies public hotel information (name, address, photos); your search terms are sent to Google to find matching hotels, but your personal account data is not.</p>
+      <p>We do not sell your personal information to anyone, for any purpose.</p>
+    </section>
+
+    <section>
+      <h2>Your choices</h2>
+      <ul>
+        <li>Edit or delete a stay at any time from that stay's page.</li>
+        <li>Block or report another user directly from their profile or one of their reviews.</li>
+        <li>Turn off notifications in your device's system settings at any time.</li>
+        <li>Delete your account entirely from Settings → Account Settings → Delete Account. This permanently removes your profile, stays, rankings, follows, and blocks.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Retention</h2>
+      <p>We keep your information for as long as your account is active. If you delete your account, we delete your associated database records right away — though photo files you uploaded may take longer to be purged from our storage systems, and are no longer linked to any account or visible to anyone once your account is deleted. Reports you've filed may be retained separately for a reasonable period to support ongoing moderation.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>Stay is not directed at children, and we do not knowingly collect information from anyone under 13. If you believe a child has created an account, contact us and we'll remove it.</p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>Your data is encrypted in transit (HTTPS), and access to it is restricted by row-level database permissions. No system is perfectly secure, but we take reasonable, industry-standard precautions.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes in a meaningful way, we'll update the effective date above. Continuing to use Stay after a change means you accept the revised policy.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy, or requests about your data? Reach us at <a href="mailto:ginta.kevin@gmail.com">ginta.kevin@gmail.com</a>.</p>
+    </section>
+
+    <nav>
+      <a href="./index.html">Privacy Policy</a>
+      <a href="./delete-account.html">Delete Your Account</a>
+    </nav>
+  </main>
+</body>
+</html>
