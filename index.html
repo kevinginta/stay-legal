@@ -36,7 +36,7 @@
 <body>
   <main>
     <h1 class="brand">Stay</h1>
-    <p class="effective">Privacy Policy &middot; Effective July 28, 2026</p>
+    <p class="effective">Privacy Policy &middot; Effective August 12, 2026</p>
 
     <section>
       <h2>Overview</h2>
@@ -45,12 +45,14 @@
 
     <section>
       <h2>Information we collect</h2>
-      <p>Account information: your email address and a password (stored securely, hashed, by our authentication provider — we never see or store your password in plain text). If you sign in with Google instead, we receive your email address and basic profile information from Google.</p>
-      <p>Profile information: your chosen username and, if you add one, a profile photo.</p>
-      <p>Content you create: stays you log (hotel, dates, note, photos), ratings and rankings from head-to-head comparisons, your wishlist, interests you pick during onboarding, who you follow and who follows you, and any reports or blocks you make against other users.</p>
-      <p>Device information: if you enable notifications, we store a push token issued by Apple/Google so we can deliver alerts (currently: new-follower alerts). This identifies your device installation, not you personally, and is deleted when you sign out or delete your account.</p>
+      <p>Account information: your email address and a password (stored securely, hashed, by our authentication provider — we never see or store your password in plain text). If you sign in with Google or Apple instead, we receive your email address and basic profile information from that provider. If you use Apple’s &quot;Hide My Email,&quot; the only address we ever see is the forwarding one Apple gives us.</p>
+      <p>Profile information: your username, plus anything else you choose to add — a display name, a short bio, a home city, a profile photo, and handles for Instagram, TikTok, YouTube or X. Only the username is required, and everything in this list appears on your profile.</p>
+      <p>Content you create: stays you log (hotel, dates, note, photos), who you tag as travelling with you, ratings and rankings from head-to-head comparisons, likes and comments you leave on stays, your wishlist and planned stays, interests you pick during onboarding, who you follow and who follows you, and any reports or blocks you make against other users.</p>
+      <p>Information other people create about you: someone else can tag you as a companion on a stay they log, which links your profile to their stay. Only the person who logged that stay can remove the tag. If you would rather not appear there, ask them, block them (which hides your content from each other in both directions), or contact us.</p>
+      <p>Device information: if you enable notifications, we store a push token issued by Apple/Google so we can deliver alerts — new followers and follow requests, likes, comments and replies, and being tagged on a stay. This identifies your device installation, not you personally, and is deleted when you sign out or delete your account.</p>
+      <p>Usage and security records: we keep a short-lived count of how many hotel searches and lookups each account makes per hour, so no single account can run up the bill on the paid map and hotel data the app depends on. Our servers also write ordinary operational logs, which can include your account identifier — for example when a request is refused for going over that limit.</p>
       <p>Diagnostics: if the app crashes or hits an error, we receive a crash report through Sentry containing the error, the app version, and basic device model and OS information. These reports are not configured to include your name, email, or IP address.</p>
-      <p>What we don't collect: Stay does not access your device's precise location, contacts, camera, or microphone. The app only ever opens your photo library, and only when you choose to add a picture.</p>
+      <p>What we don't collect: Stay does not access your device's precise location, contacts, camera, or microphone. The app only ever opens your photo library, and only when you choose to add a picture. There are no analytics or advertising trackers in the app.</p>
     </section>
 
     <section>
@@ -60,6 +62,9 @@
         <li>Operate core features: your feed, hotel pages, rankings, calendar, and search.</li>
         <li>Personalize the Explore page's suggestions, based on your interests and past stays.</li>
         <li>Send push notifications you've opted into.</li>
+        <li>Show who was tagged on a stay, and let them know they were tagged.</li>
+        <li>Enforce the privacy setting on your account, and approve or decline follow requests.</li>
+        <li>Cap how many paid searches and hotel lookups any one account can make per hour, so the app stays affordable to run and available to everyone.</li>
         <li>Diagnose crashes and fix bugs.</li>
         <li>Review reports of abuse and enforce blocks between users.</li>
         <li>Respond if you contact us for support.</li>
@@ -68,24 +73,28 @@
 
     <section>
       <h2>How we share it</h2>
-      <p>With other users: Stay is social by design. Your username, profile photo, the stays you log, your ratings, and your follower/following lists are visible to other signed-in users — unless you block them, in which case your content is hidden from each other in both directions.</p>
-      <p>With service providers: Supabase hosts our database, authentication, file storage, and backend functions. Expo (EAS) delivers app updates and routes push notifications. Sentry processes crash reports. The Google Places API supplies public hotel information (name, address, photos); your search terms are sent to Google to find matching hotels, but your personal account data is not.</p>
+      <p>With other users: Stay is social by design. On a public account, your username, profile photo, the stays you log, your ratings, your likes and comments, and your follower/following lists are visible to any signed-in user.</p>
+      <p>If you switch your account to private (Settings → Privacy), only followers you have approved can see your stays, ratings, likes, comments, and follower lists — new followers have to ask first. Your username, profile photo and bio stay visible either way, so people can still find you and request to follow.</p>
+      <p>Blocking someone hides your content from each other in both directions, whether your account is public or private.</p>
+      <p>With service providers: Supabase hosts our database, authentication, file storage, and backend functions. Expo (EAS) delivers app updates and routes push notifications. Sentry processes crash reports. The Google Places API supplies public hotel information (name, address, photos); your search terms are sent to Google to find matching hotels, but your personal account data is not. Anthropic (Claude) sorts hotels into categories such as &quot;Beach &amp; Resorts&quot; from the hotel name and city — only public hotel information is sent, never your account details or anything you wrote.</p>
       <p>We do not sell your personal information to anyone, for any purpose.</p>
     </section>
 
     <section>
       <h2>Your choices</h2>
       <ul>
-        <li>Edit or delete a stay at any time from that stay's page.</li>
+        <li>Edit or delete a stay at any time from that stay's page. Deleting a stay also removes its photos, its tags, and the likes and comments on it.</li>
+        <li>Make your account private from Settings → Privacy. People already following you stay; anyone new has to send a request you can approve or decline.</li>
+        <li>Choose which notifications reach you — follows, likes, comments, tags — each can be switched off on its own in Settings → Notifications, and you can turn all of them off in your device settings.</li>
         <li>Block or report another user directly from their profile or one of their reviews.</li>
-        <li>Turn off notifications in your device's system settings at any time.</li>
-        <li>Delete your account entirely from Settings → Account Settings → Delete Account. This permanently removes your profile, stays, rankings, follows, and blocks.</li>
+        <li>Ask the person who logged a stay to remove a tag of you; only they can remove it. Blocking them hides the stay from you and yours from them.</li>
+        <li>Delete your account entirely from Settings → Your Account → Delete Account. This permanently removes your profile, stays, rankings, likes, comments, tags, follows, and blocks.</li>
       </ul>
     </section>
 
     <section>
       <h2>Retention</h2>
-      <p>We keep your information for as long as your account is active. If you delete your account, we delete your associated database records right away — though photo files you uploaded may take longer to be purged from our storage systems, and are no longer linked to any account or visible to anyone once your account is deleted. Reports you've filed may be retained separately for a reasonable period to support ongoing moderation.</p>
+      <p>We keep your information for as long as your account is active. If you delete your account, we delete your associated database records right away — though photo files you uploaded may take longer to be purged from our storage systems, and are no longer linked to any account or visible to anyone once your account is deleted. Reports you've filed may be retained separately for a reasonable period to support ongoing moderation. The hourly usage counts described above are deleted automatically within a couple of days, whether or not you delete your account.</p>
     </section>
 
     <section>
