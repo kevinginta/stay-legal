@@ -36,11 +36,11 @@
 <body>
   <main>
     <h1 class="brand">Stay</h1>
-    <p class="effective">Privacy Policy &middot; Effective August 18, 2026</p>
+    <p class="effective">Privacy Policy &middot; Effective August 20, 2026</p>
 
     <section>
       <h2>Overview</h2>
-      <p>Stay is built and operated by an independent developer (&quot;we,&quot; &quot;us,&quot; or &quot;Stay&quot;). This policy applies to the Stay mobile app. By creating an account, you agree to the collection and use of information as described here.</p>
+      <p>Stay is built and operated by an independent developer (&quot;we,&quot; &quot;us,&quot; or &quot;Stay&quot;). This policy applies to the Stay mobile app. By creating an account, or by browsing as a guest, you agree to the collection and use of information as described here.</p>
     </section>
 
     <section>
@@ -50,8 +50,9 @@
       <p>Content you create: stays you log (hotel, dates, note, photos), who you tag as travelling with you, ratings and rankings from head-to-head comparisons, likes and comments you leave on stays, your wishlist and planned stays, interests you pick during onboarding, who you follow and who follows you, and any reports or blocks you make against other users.</p>
       <p>Information other people create about you: someone else can tag you as a companion on a stay they log, which links your profile to their stay. Only the person who logged that stay can remove the tag. If you would rather not appear there, ask them, block them (which hides your content from each other in both directions), or contact us.</p>
       <p>Device information: if you enable notifications, we store a push token issued by Apple/Google so we can deliver alerts — new followers and follow requests, likes, comments and replies, and being tagged on a stay. This identifies your device installation, not you personally, and is deleted when you sign out or delete your account.</p>
-      <p>Usage and security records: we keep a short-lived count of how many hotel searches and lookups each account makes per hour, so no single account can run up the bill on the paid map and hotel data the app depends on. Our servers also write ordinary operational logs, which can include your account identifier — for example when a request is refused for going over that limit.</p>
+      <p>Usage and security records: we keep a short-lived count of how many hotel searches and lookups each account or guest session makes per hour, so no single account can run up the bill on the paid map and hotel data the app depends on. Our servers also write ordinary operational logs, which can include your account identifier — for example when a request is refused for going over that limit.</p>
       <p>In-app activity: which hotel pages you open, and which suggestions the Explore page shows you, so we can improve suggestions — for example by surfacing hotels people look at but rarely stay at, and by not showing you the same suggestion every day. Hotel page views are kept for 12 months and suggestion records for 90 days; only combined totals are ever used, never shown to other users, and neither is shared with anyone. When a hotel search finds nothing in our catalog we also note the search term, without any link to your account, so we know which places to add next.</p>
+      <p>Guest browsing: you can look around Stay without creating an account. A guest session is a random, temporary identifier — no name, no email, no profile — used only to run the app and to apply the hourly search limits above. Guests cannot post, save, follow, or be seen by anyone, and we do not keep the browsing history described below for guests. Hotel search terms work the same as for accounts: they are sent to Google to find matching hotels, and a search that finds nothing in our catalog is noted without any link to the session. Guest sessions are deleted automatically within about 30 days, and nothing from a guest session carries over if you later create an account.</p>
       <p>Diagnostics: if the app crashes or hits an error, we receive a crash report through Sentry containing the error, the app version, and basic device model and OS information. These reports are not configured to include your name, email, or IP address.</p>
       <p>What we don't collect: Stay does not access your device's precise location, contacts, camera, or microphone. The app only ever opens your photo library, and only when you choose to add a picture. There are no third-party analytics or advertising trackers in the app — the in-app activity described above stays in our own database.</p>
     </section>
@@ -74,7 +75,7 @@
 
     <section>
       <h2>How we share it</h2>
-      <p>With other users: Stay is social by design. On a public account, your username, profile photo, the stays you log, your ratings, your likes and comments, and your follower/following lists are visible to any signed-in user.</p>
+      <p>With other users: Stay is social by design. On a public account, your username, profile photo, the stays you log, your ratings, your likes and comments, and your follower/following lists are visible to other signed-in users. People browsing as guests without an account see much less: only a hotel's combined numbers — its overall score, its highlight tags, and the photo strip of pictures added to stays there, shown without names. Guests cannot read individual reviews or open any profile, follower list, or wishlist.</p>
       <p>If you switch your account to private (Settings → Privacy), only followers you have approved can see your stays, ratings, likes, comments, and follower lists — new followers have to ask first. Your username, profile photo and bio stay visible either way, so people can still find you and request to follow.</p>
       <p>Blocking someone hides your content from each other in both directions, whether your account is public or private.</p>
       <p>With service providers: Supabase hosts our database, authentication, file storage, and backend functions. Expo (EAS) delivers app updates and routes push notifications. Sentry processes crash reports. The Google Places API supplies public hotel information (name, address, photos); your search terms are sent to Google to find matching hotels, but your personal account data is not. Anthropic (Claude) sorts hotels into categories such as &quot;Beach &amp; Resorts&quot; from the hotel name and city — only public hotel information is sent, never your account details or anything you wrote.</p>
@@ -95,7 +96,7 @@
 
     <section>
       <h2>Retention</h2>
-      <p>We keep your information for as long as your account is active. If you delete your account, we delete your associated database records right away — though photo files you uploaded may take longer to be purged from our storage systems, and are no longer linked to any account or visible to anyone once your account is deleted. Reports you've filed may be retained separately for a reasonable period to support ongoing moderation. The hourly usage counts described above are deleted automatically within a couple of days, hotel page views after 12 months and Explore suggestion records after 90 days, whether or not you delete your account — and all of them go immediately if you do.</p>
+      <p>We keep your information for as long as your account is active. If you delete your account, we delete your associated database records right away — though photo files you uploaded may take longer to be purged from our storage systems, and are no longer linked to any account or visible to anyone once your account is deleted. Reports you've filed may be retained separately for a reasonable period to support ongoing moderation. The hourly usage counts described above are deleted automatically within a couple of days, hotel page views after 12 months and Explore suggestion records after 90 days, whether or not you delete your account — and all of them go immediately if you do. Guest sessions are deleted automatically within about 30 days of being created.</p>
     </section>
 
     <section>
